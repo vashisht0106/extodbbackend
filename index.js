@@ -1,8 +1,8 @@
 const TelegramBot = require('node-telegram-bot-api');
 const express = require('express');
 const multer = require('multer');
-const sharp = require('sharp');
-const tf = require('@tensorflow/tfjs')
+
+
 const mongoose = require('mongoose');
 const dotenv = require('dotenv')
 dotenv.config()
