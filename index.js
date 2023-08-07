@@ -8,7 +8,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/microscopic_db', {
+mongoose.connect('mongodb+srv://modal:12301230@cluster0.hdgpi4p.mongodb.net/extodb', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
