@@ -17,7 +17,11 @@ mongoose.connect('mongodb+srv://modal:12301230@cluster0.hdgpi4p.mongodb.net/exto
 const app = express();
 app.use(express.json())
 app.use('/uploads', express.static('uploads'));
-
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*'); // Allow requests from any origin
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 // Create a Mongoose schema and model for images
 const imageSchema = new mongoose.Schema({
   name: String,
