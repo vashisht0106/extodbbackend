@@ -8,8 +8,8 @@ const dotenv = require('dotenv')
 dotenv.config()
 
 // Connect to MongoDB
-//const url=mongodb+srv://modal:12301230@cluster0.hdgpi4p.mongodb.net/extodb
-mongoose.connect('mongodb://localhost:27017/telegram', {
+const url='mongodb+srv://modal:12301230@cluster0.hdgpi4p.mongodb.net/extodb'
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
