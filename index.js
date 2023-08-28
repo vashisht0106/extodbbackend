@@ -464,7 +464,7 @@ bot.on('polling_error', (error) => {
 
 
 // Start the server
-const PORT = 443;
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
